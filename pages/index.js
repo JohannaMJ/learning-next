@@ -1,15 +1,9 @@
 import ArticleList from '../components/ArticleList';
-import Head from 'next/head';
-import Image from 'next/image';
 
 const home = ({ articles }) => {
   console.log(articles);
   return (
     <div>
-      <Head>
-        <title>Web dev with Next</title>
-        <meta name='keywords' content='web development, programming, next.js' />
-      </Head>
       <ArticleList articles={articles} />
     </div>
   );
